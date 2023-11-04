@@ -1,4 +1,5 @@
 var FormularioLogin = document.getElementById("FormLogin");
+var BotonIngresar = document.getElementById("Ingresar");
 
 // Recuperar número de intentos desde el almacenamiento local
 var Intentos = parseInt(localStorage.getItem("intentos")) || 0;
