@@ -1,0 +1,7 @@
+{
+    "usuarios": [
+      {"usuario": "usuario1", "contraseña": "clave1"},
+      {"usuario": "usuario2", "contraseña": "clave2"},
+      {"usuario": "usuario3", "contraseña": "clave3"}
+    ]
+  }

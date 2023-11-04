@@ -2,107 +2,108 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cifrado y Descifrado Afín</title>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@700&display=swap" rel="stylesheet">
-
-    <!--Precarga del contenido-->
-    <link rel="preload" href="CSS/normalize.css" as="style">
-    <link rel="stylesheet" href="CSS/normalize.css">
-
-    <link rel="preload" href="CSS/styles.css" as="style">
-    <link href="CSS/styles.css" rel="stylesheet">
-    <script src="js/cifrado.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/styles_login.css">
 </head>
 
 <body>
+    <div id="logo">
+        <h1><i>DANNY INDUSTRIES</i></h1>
+    </div>
+    <section class="stark-login">
 
-    <h1>Cifrado y Descifrado Afín</h1>
-
-    <div class="formularios-container">
-
-        <form class="formulario">
-            <fieldset>
-                <legend class="legend">Cifrado</legend>
-
-                <div class="contenedor-campos">
-
-                    <div class="campo">
-                        <label>Ingrese Valor de A</label>
-                        <input class="input-text" type="number" id="a_Cifrado" min="1" max="1000" required
-                            placeholder="Valor de A">
-                    </div>
-
-                    <div class="campo">
-                        <label>Ingrese Valor de B</label>
-                        <input class="input-text" type="number" id="b_Cifrado" min="0" max="1000" required
-                            placeholder="Valor de B">
-                    </div>
-
-                    <div class="campo">
-                        <label>Mensaje</label>
-                        <textarea class="input-text" id="texto-original"></textarea>
-                    </div>
-
-                    <div class="flex">
-                        <input class="boton" type="button" value="Cifrar" onclick="recogerTextoCifrado()">
-                    </div>
-
-                    <div class="campo" id="recogerTextoCifrado">
-                        <label>Resultado Cifrado</label>
-                        <textarea class="input-text" id="texto-cifrado" readonly></textarea>
-                    </div>
-
-                </div>
-            </fieldset>
+        <form id="FormLogin" action="" method="">
+            <div id="fade-box">
+                <input id="Usuario" type="text" placeholder="Usuario" required>
+                <input id="Contraseña" type="password" placeholder="Contraseña" required>
+                <div id="timer-message"></div>
+                <button id="Ingresar" type="submit">Ingresar</button>
+            </div>
         </form>
+        
+        <div class="hexagons">
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <br>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <br>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
 
-        <form class="formulario">
-            <fieldset>
-                <legend class="legend">Descifrado</legend>
+            <br>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <br>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
+            <span>&#x2B22;</span>
 
-                <div class="contenedor-campos">
+        </div>
 
-                    <div class="campo campo-des">
-                        <label>Mensaje Cifrado</label>
-                        <textarea class="input-text" id="texto-cifrado2"></textarea>
-                    </div>
+    </section>
 
-                    <div class="campo-des flex">
-                        <input class="boton" type="button" value="Descifrar" onclick="recogerTextoDescifrado()">
-                    </div>
-
-                    <div class="campo campo-des">
-                        <label>Resultado Descifrado</label>
-                        <textarea class="input-text" id="texto-descifrado" readonly></textarea>
-                    </div>
-
-                </div>
-            </fieldset>
-        </form>        
-
+    <div class="behind-circle" id="circle1">
+        <div id="inner-cirlce1">
+            <h2> </h2>
+        </div>
     </div>
 
-    <div class="formularios-container formulario">
-        <fieldset>
-            <legend class="legend">Estadísticas</legend>
-    
-            <div class="campo-grafico-container campo-des">
-                <label>Resultado</label>
-                <textarea class="input-text input-textarea" id="texto-estadisticas" readonly></textarea>
-            </div>
-    
-            <div class="campo-grafico-container grafico-container">
-                <canvas id="graficoFrecuencias"></canvas>
-            </div>
-        </fieldset>
-    </div>
-    
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
+    <script src="js/login.js"></script>
 </body>
 
 </html>
