@@ -13,10 +13,10 @@ fetch('data/usuarios.json').then(response => response.json()).then(data => {
     FormularioLogin.addEventListener("submit", function (event) {
         event.preventDefault();
         var usuario = document.getElementById("Usuario").value;
-        var contraseña = document.getElementById("Contraseña").value;
+        var clave = document.getElementById("Clave").value;
 
         // Verificar si las credenciales coinciden con los usuarios del archivo de configuración
-        var usuarioValido = usuarios.find(u => u.usuario === usuario && u.contraseña === contraseña);
+        var usuarioValido = usuarios.find(u => u.usuario === usuario && u.clave === clave);
 
         if (usuarioValido) {
             // Inicio de sesión exitoso
