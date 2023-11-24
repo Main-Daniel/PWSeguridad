@@ -1,7 +1,7 @@
 {
     "usuarios": [
-      {"usuario": "usuario1", "clave": "clave1"},
-      {"usuario": "usuario2", "clave": "clave2"},
-      {"usuario": "usuario3", "clave": "clave3"}
+      {"usuario": "usuario1", "clave": "P@ssw0rd!"},
+      {"usuario": "usuario2", "clave": "S3cure#Pa$$"},
+      {"usuario": "usuario3", "clave": "L0ngP@ssw0rd!"}
     ]
   }

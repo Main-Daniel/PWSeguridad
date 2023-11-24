@@ -1,6 +1,6 @@
 <?php
 // Ruta al archivo JSON
-$json_file = 'data\usuarios.json';
+$json_file = '/var/www/usuarios/usuarios.json';
 
 // Lee y muestra el contenido del archivo JSON
 if (file_exists($json_file)) {
